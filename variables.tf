@@ -17,8 +17,7 @@ variable "TFE_ORG_NAME" {
 }
 
 variable "TFE_TOKEN" {
-  description = "(Required) A reference to your VCS repository in the format :org/:repo where :org and :repo refer to the organization and repository in your VCS provider.
-"
+  description = "(Required) A reference to your VCS repository in the format :org/:repo where :org and :repo refer to the organization and repository in your VCS provider."
 }
 
 variable "OAUTH_TOKEN_ID" {
