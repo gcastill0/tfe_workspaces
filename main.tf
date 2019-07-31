@@ -8,8 +8,8 @@ resource "tfe_workspace" "workspace" {
   organization = "${var.TFE_ORG_NAME}"
 
   vcs_repo {
-    identifier     = "${var.vcs_id}"
-    oauth_token_id = "${var.VCS_OAUTH_TOKEN_ID}"
+    identifier     = "${var.vcs_repo}"
+    oauth_token_id = "${var.OAUTH_TOKEN_ID}"
   }
 }
 

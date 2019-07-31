@@ -3,9 +3,9 @@ variable "workspace_name" {
   default     = "test"
 }
 
-variable "vcs_id" {
+variable "vcs_repo" {
   description = "VCS repo in the format org_name/repo_name."
-  default     = "gcastill0/sandbox-aws"
+  default     = ":gcastill0/:sandbox-aws"
 }
 
 variable "TFE_HOST" {
@@ -17,11 +17,12 @@ variable "TFE_ORG_NAME" {
 }
 
 variable "TFE_TOKEN" {
-  description = "(Optional) The token used to authenticate with Terraform Enterprise."
+  description = "(Required) A reference to your VCS repository in the format :org/:repo where :org and :repo refer to the organization and repository in your VCS provider.
+"
 }
 
-variable "VCS_OAUTH_TOKEN_ID" {
-  description = "(Optional) The token used to authenticate with Terraform Enterprise."
+variable "OAUTH_TOKEN_ID" {
+  description = "(Required) Token ID of the VCS Connection (OAuth Conection Token) to use."
 }
 
 variable "AWS_SECRET_ACCESS_KEY" {
