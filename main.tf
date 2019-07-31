@@ -4,8 +4,9 @@ provider "tfe" {
 }
 
 resource "tfe_workspace" "workspace" {
-  name         = "${var.workspace_name}"
-  organization = "${var.TFE_ORG_NAME}"
+  name              = "${var.workspace_name}"
+  organization      = "${var.TFE_ORG_NAME}"
+  terraform_version = "${var.terraform_version}"
 
   vcs_repo {
     identifier     = "${var.vcs_repo}"
