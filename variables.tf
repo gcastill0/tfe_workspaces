@@ -7,7 +7,7 @@ variable "workspace_name" {
   default     = "test"
 }
 
-variable "AWS_SECRET_ACCESS_KEY" {
+variable "ORG_AWS_SECRET_ACCESS_KEY" {
   description = "Desired name for workspace."
 }
 
