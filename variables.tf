@@ -1,3 +1,8 @@
+variable "terraform_version" {
+  description = "(Optional) The version of Terraform to use for the workspace."
+  default     = "0.11.14"
+}
+
 variable "workspace_name" {
   description = "Desired name for workspace."
   default     = "test"
