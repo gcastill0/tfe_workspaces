@@ -10,7 +10,7 @@ resource "tfe_workspace" "workspace" {
 
 resource "tfe_variable" "credentials" {
   key          = "AWS_SECRET_ACCESS_KEY"
-  value        = "my_value_name"
+  value        = "${var.AWS_SECRET_ACCESS_KEY}"
   category     = "env"
   workspace_id = "${tfe_workspace.workspace.id}"
 }
