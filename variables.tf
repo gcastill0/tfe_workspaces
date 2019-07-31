@@ -11,10 +11,14 @@ variable "AWS_SECRET_ACCESS_KEY" {
   description = "Desired name for workspace."
 }
 
-variable "tfe_host" {
+variable "AWS_ACCESS_KEY_ID" {
+  description = "Desired name for workspace."
+}
+
+variable "TFE_HOST" {
   description = "(Optional) The Terraform Enterprise hostname to connect to. Defaults to app.terraform.io. Can be overridden by setting the TFE_HOSTNAME environment variable."
 }
 
-variable "tfe_token" {
+variable "TFE_TOKEN" {
   description = "(Optional) The token used to authenticate with Terraform Enterprise."
 }
