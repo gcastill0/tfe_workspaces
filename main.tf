@@ -4,7 +4,7 @@ resource "tfe_organization" "tfe_org" {
 }
 
 resource "tfe_workspace" "workspace" {
-  name         = "${workspace_name}"
+  name         = "${var.workspace_name}"
   organization = "${tfe_organization.tfe_org.id}"
 }
 
