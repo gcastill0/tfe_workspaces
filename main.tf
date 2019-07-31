@@ -5,7 +5,12 @@ provider "tfe" {
 
 resource "tfe_workspace" "workspace" {
   name         = "${var.workspace_name}"
-  organization = "gcastill0"
+  organization = "${var.TFE_ORG_NAME}"
+
+  vcs_repo {
+    identifier     = "${var.vcs_id}"
+    oauth_token_id = "${var.VCS_OAUTH_TOKEN_ID}"
+  }
 }
 
 resource "tfe_variable" "aws_secret_access_key" {
