@@ -1,3 +1,8 @@
+provider "tfe" {
+  hostname = "${var.tfe_host}"
+  token    = "${var.tfe_token}"
+}
+
 resource "tfe_workspace" "workspace" {
   name         = "${var.workspace_name}"
   organization = "gcastill0"

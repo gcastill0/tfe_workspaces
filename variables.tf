@@ -6,3 +6,13 @@ variable "workspace_name" {
   description = "Desired name for workspace."
   default     = "test"
 }
+
+variable "tfe_host" {
+  description = "(Optional) The Terraform Enterprise hostname to connect to. Defaults to app.terraform.io. Can be overridden by setting the TFE_HOSTNAME environment variable."
+  default     = "app.terraform.io"
+}
+
+variable "tfe_token" {
+  description = "(Optional) The token used to authenticate with Terraform Enterprise."
+  default     = "0YL3AgYO0TIMLA.atlasv1.caFbHKnY0T8TaNNqxiTFFkXnGXT3TOYMEt7W5ScZzLqGPyeYxYWzK1m0wdfKGHGh1zY"
+}
