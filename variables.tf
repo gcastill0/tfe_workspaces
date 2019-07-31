@@ -5,7 +5,7 @@ variable "workspace_name" {
 
 variable "vcs_repo" {
   description = "VCS repo in the format org_name/repo_name."
-  default     = ":gcastill0/:sandbox-aws"
+  default     = "gcastill0/sandbox-aws"
 }
 
 variable "TFE_HOST" {
