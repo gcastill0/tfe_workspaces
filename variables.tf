@@ -7,6 +7,10 @@ variable "workspace_name" {
   default     = "test"
 }
 
+variable "AWS_SECRET_ACCESS_KEY" {
+  description = "Desired name for workspace."
+}
+
 variable "tfe_host" {
   description = "(Optional) The Terraform Enterprise hostname to connect to. Defaults to app.terraform.io. Can be overridden by setting the TFE_HOSTNAME environment variable."
   default     = "app.terraform.io"
